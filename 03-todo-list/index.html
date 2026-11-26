@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List — Lab Task 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="task-shell">
+    <div class="shell-header">
+      <h1>Daily Task Manager</h1>
+      <span id="pendingCount" class="count-pill">0 pending</span>
+    </div>
+    <p class="hint">Mark tasks complete, move items up or down, or remove them.</p>
+
+    <form id="taskForm" class="entry-bar">
+      <input type="text" id="taskField" placeholder="Write a task to add..." required />
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="taskContainer" class="task-rows"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

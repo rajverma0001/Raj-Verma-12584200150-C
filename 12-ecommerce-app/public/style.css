@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #f0fdfa; color: #134e4a; }
+.navbar { background: #134e4a; color: #fff; padding: 14px 28px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+.brand { font-size: 1.25rem; font-weight: 800; color: #38bdf8; }
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.tab-btn { background: #1e293b; color: #e2e8f0; border: none; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.tab-btn.active { background: #0d9488; color: #fff; }
+.container { max-width: 1080px; margin: 28px auto; padding: 0 20px; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+h1 { margin-bottom: 18px; font-size: 1.6rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.card-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; }
+.split { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; align-items: start; }
+.stack { display: flex; flex-direction: column; gap: 12px; }
+.row { display: flex; gap: 10px; align-items: center; justify-content: space-between; }
+input, select, textarea { padding: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; width: 100%; }
+.btn-primary { background: #0d9488; color: #fff; border: none; padding: 10px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.btn-sec { background: #e2e8f0; color: #134e4a; border: none; padding: 8px 12px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.btn-del { background: #fee2e2; color: #dc2626; border: none; padding: 6px 10px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.badge { display: inline-block; background: #dbeafe; color: #0f766e; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 700; margin-bottom: 8px; }
+.price { font-size: 1.15rem; font-weight: 800; color: #134e4a; margin: 8px 0; }
+.total-line { font-size: 1.1rem; }
+@media (max-width: 768px) { .split { grid-template-columns: 1fr; } }

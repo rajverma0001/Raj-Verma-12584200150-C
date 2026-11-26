@@ -1,0 +1,13 @@
+{
+  "name": "08-express-routes-template-engine",
+  "version": "1.0.0",
+  "description": "Express app with 5+ GET/POST routes and EJS template engine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "ejs": "^3.1.10"
+  }
+}

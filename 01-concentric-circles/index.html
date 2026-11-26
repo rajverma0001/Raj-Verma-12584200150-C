@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concentric Circles — Lab Task 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <header class="top-head">
+      <span class="tag">Lab Exercise 01</span>
+      <h1>Three Concentric Circles</h1>
+      <p class="desc">Drawn with radii <strong>10px</strong>, <strong>20px</strong>, and <strong>30px</strong> using distinct colors.</p>
+    </header>
+
+    <section class="panels">
+      <div class="panel-box">
+        <h2>Pure CSS Nesting</h2>
+        <div class="stage">
+          <div class="ring ring-outer" title="Radius: 30px">
+            <div class="ring ring-mid" title="Radius: 20px">
+              <div class="ring ring-inner" title="Radius: 10px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-box">
+        <h2>HTML5 Canvas API</h2>
+        <div class="stage">
+          <canvas id="ringCanvas" width="120" height="120"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <footer class="specs">
+      <div class="spec-item"><span class="swatch s-outer"></span> Outer Circle — 30px radius (60px diameter)</div>
+      <div class="spec-item"><span class="swatch s-mid"></span> Middle Circle — 20px radius (40px diameter)</div>
+      <div class="spec-item"><span class="swatch s-inner"></span> Inner Circle — 10px radius (20px diameter)</div>
+    </footer>
+  </main>
+
+  <script>
+    const ringCanvas = document.getElementById("ringCanvas");
+    const drawCtx = ringCanvas.getContext("2d");
+    const centerX = ringCanvas.width / 2;
+    const centerY = ringCanvas.height / 2;
+
+    const ringSpecs = [
+      { r: 30, fill: "#0d9488" },
+      { r: 20, fill: "#f43f5e" },
+      { r: 10, fill: "#fbbf24" },
+    ];
+
+    ringSpecs.forEach((item) => {
+      drawCtx.beginPath();
+      drawCtx.arc(centerX, centerY, item.r, 0, Math.PI * 2);
+      drawCtx.fillStyle = item.fill;
+      drawCtx.fill();
+    });
+  </script>
+</body>
+</html>

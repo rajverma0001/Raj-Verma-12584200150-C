@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #132a25;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.arena {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 980px;
+  width: 100%;
+}
+
+.board-card {
+  background: #1b3b34;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 52px);
+  grid-template-rows: repeat(10, 52px);
+  border: 2px solid #2c5e53;
+}
+
+.tile {
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tile-even { background: #fef9c3; }
+.tile-odd { background: #e0f2fe; }
+.has-snake { background: #ffe4e6; }
+.has-ladder { background: #d1fae5; }
+
+.jump-tag {
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.pawn-slot {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.pawn {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #ffffff;
+}
+
+.pawn-1 { background: #e11d48; }
+.pawn-2 { background: #0284c7; }
+
+.side-hud {
+  width: 300px;
+  background: #1b3b34;
+  border: 1px solid #2c5e53;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.side-hud h1 {
+  font-size: 1.45rem;
+}
+
+.player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.p-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #132a25;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+}
+
+.p-card.active-turn {
+  border-color: #34d399;
+}
+
+.dice-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.dice-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.btn-roll, .btn-reset {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-roll {
+  background: #10b981;
+  color: #052e16;
+}
+
+.btn-reset {
+  background: #2c5e53;
+  color: #f8fafc;
+}
+
+.turn-banner {
+  background: #132a25;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #e2e8f0;
+}
+
+.rules-box {
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.rules-box h3 {
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+  color: #f8fafc;
+}

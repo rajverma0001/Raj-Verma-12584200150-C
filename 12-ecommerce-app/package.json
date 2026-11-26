@@ -1,0 +1,12 @@
+{
+  "name": "12-ecommerce-app",
+  "version": "1.0.0",
+  "description": "Full-stack E-Commerce app with Cart, Payment, Orders section, and Seller Master Panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

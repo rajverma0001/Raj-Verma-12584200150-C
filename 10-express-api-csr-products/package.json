@@ -1,0 +1,12 @@
+{
+  "name": "10-express-api-csr-products",
+  "version": "1.0.0",
+  "description": "Express JSON API for products (id, name, price, rating) with CSR frontend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

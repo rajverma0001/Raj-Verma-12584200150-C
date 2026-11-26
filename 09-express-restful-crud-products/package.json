@@ -1,0 +1,14 @@
+{
+  "name": "09-express-restful-crud-products",
+  "version": "1.0.0",
+  "description": "Express RESTful CRUD application for products (name, price, description)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "ejs": "^3.1.10",
+    "method-override": "^3.0.0"
+  }
+}

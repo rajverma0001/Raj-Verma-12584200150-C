@@ -1,0 +1,57 @@
+{
+  "nextProductId": 5,
+  "nextOrderId": 2002,
+  "products": [
+    {
+      "id": 1,
+      "name": "Studio Condenser Microphone",
+      "category": "Audio",
+      "price": 3299,
+      "stock": 14,
+      "description": "Cardioid USB condenser mic with pop filter and desk stand."
+    },
+    {
+      "id": 2,
+      "name": "4K Webcam Ultra",
+      "category": "Accessories",
+      "price": 3899,
+      "stock": 10,
+      "description": "Auto-focus 4K camera with dual stereo microphones."
+    },
+    {
+      "id": 3,
+      "name": "Portable SSD 1TB",
+      "category": "Storage",
+      "price": 6499,
+      "stock": 16,
+      "description": "High-speed USB-C solid state drive up to 1050 MB/s."
+    },
+    {
+      "id": 4,
+      "name": "Extended Desk Mat XL",
+      "category": "Workspace",
+      "price": 799,
+      "stock": 30,
+      "description": "Water-resistant stitched-edge desk pad (900x400mm)."
+    }
+  ],
+  "orders": [
+    {
+      "id": 2001,
+      "customerName": "Ananya Gupta",
+      "paymentMethod": "UPI",
+      "transactionId": "TXN-DEMO-2001",
+      "items": [
+        {
+          "id": 1,
+          "name": "Studio Condenser Microphone",
+          "price": 3299,
+          "qty": 1
+        }
+      ],
+      "total": 3299,
+      "status": "Paid & Confirmed",
+      "createdAt": "2026-11-24T11:30:00.000Z"
+    }
+  ]
+}

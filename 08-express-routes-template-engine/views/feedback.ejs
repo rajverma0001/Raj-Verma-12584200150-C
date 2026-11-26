@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title><%= title %></title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Services</a>
+  <a href="/contact">Contact</a>
+  <a href="/feedback">Feedback</a>
+</nav>
+  <main>
+    <h1>Student Feedback</h1>
+    <form action="/feedback" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <select name="rating">
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Average</option>
+      </select>
+      <textarea name="comment" rows="3" placeholder="Write feedback..." required></textarea>
+      <button type="submit">Submit Feedback (POST)</button>
+    </form>
+    <h2>Recent Feedback</h2>
+    <% feedbacks.forEach(item => { %>
+      <div class="card">
+        <strong><%= item.name %></strong> (Rating: <%= item.rating %>/5)<br/>
+        <span><%= item.comment %></span>
+      </div>
+    <% }) %>
+  </main>
+</body>
+</html>

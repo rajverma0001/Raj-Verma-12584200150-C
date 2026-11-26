@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title><%= title %></title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Services</a>
+  <a href="/contact">Contact</a>
+  <a href="/feedback">Feedback</a>
+</nav>
+  <main>
+    <h1>Contact Us</h1>
+    <form action="/contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message (POST)</button>
+    </form>
+    <% if (submitted) { %>
+      <div class="alert">
+        <strong>Received POST /contact submission:</strong><br/>
+        Name: <%= submitted.name %><br/>
+        Email: <%= submitted.email %><br/>
+        Message: <%= submitted.message %>
+      </div>
+    <% } %>
+  </main>
+</body>
+</html>

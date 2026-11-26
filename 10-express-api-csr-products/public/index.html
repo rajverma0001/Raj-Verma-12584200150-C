@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 10 - Product API & CSR Frontend</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Product Catalog (Client-Side Rendering)</h1>
+    <p class="subtitle">Data is fetched from <code>/api/products</code> and rendered dynamically on the client.</p>
+
+    <section class="form-card">
+      <h2>Add New Product</h2>
+      <form id="productForm">
+        <input type="text" id="name" placeholder="Product Name" required />
+        <input type="number" id="price" placeholder="Price (₹)" step="0.01" required />
+        <input type="number" id="rating" placeholder="Rating (1 - 5)" min="1" max="5" step="0.1" required />
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <section id="productGrid" class="grid"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

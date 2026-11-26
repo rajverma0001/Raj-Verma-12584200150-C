@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universities Finder — Lab Task 7</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-box">
+    <h1>Global University Explorer</h1>
+    <p class="lead">Enter a country name to view universities, their states/provinces, and official websites.</p>
+
+    <form id="countryForm" class="lookup-bar">
+      <input type="text" id="countryField" placeholder="Enter country (e.g., India, Germany, Japan)" value="India" required />
+      <button type="submit">Find Universities</button>
+    </form>
+
+    <div id="infoBanner" class="info-banner"></div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>S.No.</th>
+            <th>University Name</th>
+            <th>State / Province</th>
+            <th>Official Website</th>
+          </tr>
+        </thead>
+        <tbody id="uniTableBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

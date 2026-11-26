@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake & Ladder — Lab Task 5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="arena">
+    <section class="board-card">
+      <div id="gameGrid" class="game-grid"></div>
+    </section>
+
+    <aside class="side-hud">
+      <h1>Snake &amp; Ladder</h1>
+      <div class="player-list">
+        <div id="playerOneBox" class="p-card active-turn">
+          <span class="pawn pawn-1"></span>
+          <div>
+            <strong>Player 1</strong>
+            <div id="p1Square">Position: 1</div>
+          </div>
+        </div>
+        <div id="playerTwoBox" class="p-card">
+          <span class="pawn pawn-2"></span>
+          <div>
+            <strong>Player 2</strong>
+            <div id="p2Square">Position: 1</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dice-area">
+        <div id="diceFace" class="dice-icon">🎲</div>
+        <button id="diceBtn" class="btn-roll">Roll Dice</button>
+        <button id="restartBtn" class="btn-reset">New Game</button>
+      </div>
+
+      <div id="turnBanner" class="turn-banner">Player 1 starts! Click Roll Dice.</div>
+
+      <div class="rules-box">
+        <h3>Board Jumps</h3>
+        <p><strong>Ladders:</strong> 6→24, 15→44, 28→52, 41→65, 53→72, 64→85, 73→94</p>
+        <p><strong>Snakes:</strong> 26→7, 39→11, 48→19, 59→32, 68→46, 79→56, 88→49, 98→38</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
