@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Full Stack Development — Lab Assignment (13 Tasks)
 
 ## Folder Structure
@@ -30,3 +31,6 @@ cd 13-react-portfolio
 npm install
 npm run dev
 ```
+=======
+# Raj-Verma-12584200150-C
+>>>>>>> e7c9ef8531e28d4fe0b822f0314d0767471f49ea
